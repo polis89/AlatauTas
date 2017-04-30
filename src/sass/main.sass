@@ -1,0 +1,462 @@
+@import variables
+
+*::-webkit-input-placeholder 
+  color: #767676
+  font-family: "MuseoSansLight"
+  font-size: 1.2em
+*:-moz-placeholder 
+  color: #767676
+  font-family: "MuseoSansLight"
+  font-size: 1.2em
+*::-moz-placeholder 
+  color: #767676
+  font-family: "MuseoSansLight"
+  font-size: 1.2em
+*:-ms-input-placeholder 
+  color: #767676
+  font-family: "MuseoSansLight"
+  font-size: 1.2em
+
+.clearfix
+	content: ""
+	clear: both
+	display: block
+
+h2
+	font-family: "MuseoSansBlack", sans-serif
+	text-transform: uppercase
+	font-size: 1.9em
+	line-height: 1.2em
+	margin-bottom: 0
+	margin-top: 0
+	span
+		color: $accent-color
+		text-decoration: underline
+
+
+h4
+	text-transform: uppercase
+	text-align: center
+	font-family: "MuseoSansBlack"
+	font-size: 1em
+
+h5
+	font-size: 1.1em
+	margin-top: 6px
+	margin-bottom: 11px
+	font-family: "MuseoSansBlack"
+	color: $accent-color
+	text-align: center
+	text-transform: uppercase
+	
+
+p.ital
+	font-family: "MuseoSansLightItalic"
+	margin: 0
+	padding: 0
+
+span.line	
+	text-decoration: underline
+
+span.accent
+	color: $accent-color
+
+section.top,
+section.service
+	padding-top: 35px
+	padding-bottom: 35px
+
+input
+	box-sizing: border-box
+	outline: none;
+	placeholder: #000
+	section.sale &,
+	section.choose &
+		width: 100%
+		height: 50px
+		border-radius: 25px
+		&[type="button"]
+			transition: all 0.3s
+			background-color: $accent-color
+			border: none
+			color: #fff
+			text-transform: uppercase
+			font-family: "MuseoSansLight"
+			font-size: 1.2em
+			&:hover
+				background-color: $accent-color-dark
+			&:active
+				background-color: $accent-color-light
+		&[type="text"]
+			margin-bottom: 16px
+			background-color: transparent
+			border: 1px $accent-color solid
+			color: #000
+			padding-left: 15px
+			font-size: 1.05em
+			&:focus
+				border-color: $accent-color-dark
+form
+	p
+		font-family: "MuseoSansLight", sans-serif
+		margin-top: 9px
+		margin-bottom: 0
+		font-size: 0.75em
+		text-align: center
+
+
+section.top,
+section.service,
+section.features,
+section.info_numbers,
+section.clients,
+section.choose.dark,
+section.work,
+section.questions
+	background-image: url(../img/bg_light.jpeg)
+	background-position: top right
+	// background-size: cover
+	// background-color: green
+
+section.sale,
+section.choose,
+section.feedbacks
+	background-image: url(../img/bg_dark.jpeg)
+	background-position: top right
+	// background-size: cover
+	// background-color: #000
+
+
+section.sale
+	padding-top: 18px
+	text-align: center
+	h3
+		margin-top: 0
+		margin-bottom: 0
+		font-family: "MuseoSansBlack", sans-serif
+		text-transform: uppercase
+		font-size: 1.95em
+		color: $accent-color
+	.usual
+		font-family: "MuseoSansLight"
+		margin-top: 0
+		margin-bottom: 0
+	.sale_pr
+		font-family: "MuseoSansBlack", sans-serif
+		margin-top: 0
+		margin-bottom: 0
+		font-size: 3.5em
+	.flip-clock-dot
+		display: none
+	.flip-clock-label
+		bottom: -1.5em
+		top: auto
+	.flip-clock-wrapper
+		margin: 0 auto
+		width: 270px
+		transform: scale(0.47)
+		transform-origin: top left
+		white-space: nowrap
+	.flip-clock-divider
+		width: 8px
+		float: none
+		display: inline-block
+		&.days
+			width: 0
+	.flip
+		white-space: nowrap
+		float: none
+		display: inline-block
+	.flip-clock-wrapper ul li a div div.inn
+		color: #272727
+		background: #d1d5d6
+		background: linear-gradient(to bottom, #e0e0e0 0%,#b4b4b4 49%,#ededed 51%,#dfdfdf 100%)
+	form 
+		position: relative
+		top: -30px
+
+section.service
+	.service_item
+		margin-bottom: 19px
+		&:after
+			content: ""
+			display: block
+			clear: both
+	.column_50
+		float: left
+		width: 50%
+	.service_img
+		border: solid 2px $accent-color
+		width: 75%
+		height: auto
+		margin-left: 6%
+	.ital
+		margin-bottom: 20px
+		font-size: 1.15em
+	.h3_add
+		margin-bottom: 0
+		margin-top: 0
+		font-family: "MuseoSansItalic"
+	h3
+		font-size: 1em
+		margin-top: 0
+		margin-bottom: 0
+		font-family: "MuseoSansRegular"
+	ul
+		margin-top: 0
+		font-family: "MuseoSansLight"
+		font-size: 1.2em
+		list-style-type: none
+		padding: 0 0 0 11.5%
+		li
+			background-image: url(../img/list_item_service.png)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: left center
+			padding-left: 20px
+			font-size: 0.9em
+
+section.choose
+	padding-bottom: 30px
+	.book
+		width: 75%
+		margin: 0 auto
+		padding-top: 10px
+	h2 span
+		color: #000
+	p.ital
+		color: $accent-color
+
+section.features
+	padding-bottom: 25px
+	padding-top: 34px
+	h2
+		margin-bottom: 8px
+	.feature
+		h3
+			margin-top: 2px
+			margin-bottom: 0
+			text-transform: uppercase
+			font-family: "MuseoSansLight"
+			text-decoration: underline
+			font-size: 1em
+			color: $accent-color
+		ul
+			list-style-type: none
+			padding: 0
+			margin: 0
+			li::before
+				content: "- "
+		margin-bottom: 20px
+
+section.info_numbers
+	padding-bottom: 11px
+	padding-top: 25px
+	h2
+		margin-bottom: 20px
+	.info_block
+		margin-bottom: 30px
+		p
+			margin: 0
+			padding: 0				
+		.info_text
+			@include small{font-size: 0.8em}
+		.info_number
+			float: right
+			color: $accent-color
+			padding-left: 10px
+			p 
+				text-align: right
+				.big_number
+					font-size: 1.8em
+					@include small{font-size: 1.5em}
+		&:after
+			content: ""
+			clear: both
+			display: block
+		&:last-child
+			margin-bottom: 10px
+
+section.clients
+	padding-bottom: 25px
+	padding-top: 35px
+	p.ital
+		margin-bottom: 20px
+	.example_block
+		float: left
+		width: 50%
+		text-align: center
+		.img_cont
+			height: 100px
+			img
+				width: auto
+				height: 100px
+	h4
+		width: 95%
+		margin: 26px auto
+		@include small{font-size: 0.8em}
+	p.center_a
+		text-align: center
+	.company
+		float: left
+		width: 33.33%
+		img
+			display: block
+			width: auto
+			height: 35px
+			margin: 0 auto
+			max-width: 100%
+		&:last-child
+			float: none
+			margin: 0 auto
+			img
+				height: 50px
+	.clearfix
+		margin-bottom: 20px
+section.feedbacks
+	padding-bottom: 25px
+	padding-top: 20px
+	.ital
+		margin-top: 7px
+	.doc
+		width: 60%
+		margin: 10px auto
+	.video
+		width: 70%
+		margin: 15px auto
+		iframe
+			width: 100%
+			height: auto
+			border: none
+section.work
+	padding-bottom: 25px
+	padding-top: 16px
+	.work_sect
+		position: relative
+		box-sizing: border-box
+		float: left
+		width: 50%
+		background-color: #fff
+		border: solid 1px #eee
+		.img_fluid
+			width: 90%
+			margin: 0 auto
+			display: block
+		p
+			font-size: 0.7em
+			height: 44px
+			padding-left: 7px
+			padding-bottom: 0
+			margin-bottom: 0
+		.array_right
+			position: absolute
+			width: 23px
+			top: 50%
+			left: -6px	
+			margin-top: -13px
+		.array_down
+			position: absolute
+			width: 26px
+			top: 8px
+			right: 0	
+			margin-top: -13px
+		.array_left
+			position: absolute
+			width: 23px
+			top: 50%
+			right: -6px
+			z-index: 1	
+			margin-top: -13px
+section.questions
+	padding-bottom: 35px
+	padding-top: 16px
+	form
+		font-size: 1em
+		margin-top: 15px
+		label
+			margin-bottom: 6px
+			display: block
+			font-family: "MuseoSansLight"
+		input,
+		textarea
+			box-sizing: border-box
+			width: 100%
+			padding: 8px
+			background-color: transparent
+		input[type="text"]
+			margin-bottom: 22px
+			outline: none;
+			placeholder: #000
+			border: none
+			border-bottom: 2px solid $color-form
+		textarea
+			background-color: #fff
+			border: solid 2px $color-form
+			outline: none;
+			color: #767676
+			font-family: "MuseoSansRegular"
+			font-size: 1em
+		p
+			margin-top: 2px
+			margin-bottom: 5px
+			text-align: left
+		input[type="button"]
+			border: solid 2px $accent-color
+			width: 50%
+			float: right
+			text-transform: uppercase
+			font-family: "MuseoSansRegular"
+			font-size: 1em
+			padding: 15px 0
+			border-radius: 30px
+			transition: all 0.4s
+			&:hover
+				background-color: $accent-color
+				color: #fff
+footer
+	background-image: url(../img/bg_footer.jpg)
+	background-position: top 
+	text-align: center
+	padding-top: 15px
+	padding-bottom: 20px
+	p
+		padding-bottom: 0
+		margin-bottom: 0
+	.copy
+		color: #fff
+		font-size: 1.1em
+	.soc
+		font-size: 2em
+		margin-top: 20px
+		.social
+			width: 45px
+			height: 45px
+			display: inline-block
+			border-radius: 50%
+			background-color: $accent-color-light
+		a
+			display: block
+			color: #fff
+			padding-top: 5px
+	p.adress
+		color: #fff
+		margin-bottom: 10px
+	.phone
+		font-size: 2.6em
+		font-family: "MuseoSansBold"	
+		@include small{font-size: 2em}
+	.name
+		color: #eee
+		margin-bottom: 5px
+	.autor
+		padding: 0
+		margin: 3px 0
+
+
+
+
+
+
+
+
+

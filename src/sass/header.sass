@@ -1,0 +1,157 @@
+@import variables
+
+body
+	margin: 0
+	font-family: "MuseoSansRegular"
+	font-size: 16px
+
+.img_fluid
+	width: 100%
+	height: auto
+
+.wrapper
+	padding-left: 12px
+	padding-right: 12px
+
+header
+	background-color: $accent-color
+	height: 54px
+	border-bottom: 1px solid #d1e7db
+
+	&:after
+		content: ""
+		display: block
+		clear: both
+
+header .wrapper 
+	.menu_btn,
+	.logo
+		cursor: pointer
+		float: left
+		margin-top: 12px 
+	.menu_btn
+		width: 30px
+		margin-right: 23px
+	.logo
+		width: 70px
+	.menu_btn_right
+		float: right
+		border-left: 1px solid #57a97b
+		padding-top: 12px
+		height: 42px
+	.btn_translate
+		width: 46px
+		a
+			display: block
+			width: 70%
+			padding-left: 12px
+	.btn_map
+		width: 56px
+		a
+			display: block
+			width: 34%
+			padding-left: 19px
+
+.menu
+	display: none
+	position: absolute
+	width: 85%
+	@include small{width: 90%}
+	top: 0
+	left: 0
+	z-index: 1
+	.close_btn
+		position: absolute
+		top: 0
+		left: 0
+		color: $accent-color
+		font-size: 2em
+		padding-left: 5px
+	h1
+		margin: 0
+		padding: 15px 0 16px
+		text-align: center
+		color: $accent-color
+		font-family: "MuseoSansBlack"
+		font-size: 1.65em
+		@include small{font-size: 1.3em}
+	ul
+		list-style-type: none
+		padding: 0
+		margin-top: 0
+		margin-bottom: 0
+		font-size: 1.3em
+		@include small{font-size: 1em}
+	.mnu_wrapper
+		padding: 0 5%
+	.mnu_phone
+		img
+			width: 28px
+			@include small{width: 22px}
+			display: inline-block
+			vertical-align: middle
+			padding-right: 5px
+			position: relative
+			top: -3px
+		text-align: center
+		font-family: "MuseoSansBlack"
+		background-color: #c1dfce
+		border-radius: 25px
+		padding: 15px 0 8px
+		@include small{padding-top: 10px}
+		margin: 0 10%
+		font-size: 1.35em
+		@include small{font-size: 1.1em}
+	.top_menu
+		background-color: #fff
+		ul
+			margin-top: 25px
+			a
+				color: $accent-color
+				text-decoration: none
+			li
+				padding: 15px 0
+				border-top: 1px solid $accent-color
+				background-image: url(../img/arrows.png)
+				background-repeat: no-repeat
+				background-position: right center
+				background-size: 15px
+	.bottom_menu
+		background-color: $accent-color
+		ul
+			a
+				color: #fff	
+				text-decoration: none
+			padding-bottom: 30px
+			li
+				display: block
+				padding: 15px 0 15px 6px
+				border-top: 1px solid #b4d9c4
+				position: relative
+				z-index: 2
+				&:nth-child(1)
+					border-top: none
+					z-index: 2
+					img
+						&.orange
+							position: absolute
+							left: -5%	
+							top: 10px
+							width: 65px
+							@include small{width: 45px; top: 15px}
+						position: relative
+						top: 5px
+						z-index: 3
+				img
+					display: inline-block
+					width: 22px
+					padding-right: 20px
+					@include small{width: 17px;padding-right: 10px}
+.shadow
+	display: none
+	top: 0
+	left: 0
+	position: absolute
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,0.75)

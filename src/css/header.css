@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: "MuseoSansRegular";
+  font-size: 16px; }
+
+.img_fluid {
+  width: 100%;
+  height: auto; }
+
+.wrapper {
+  padding-left: 12px;
+  padding-right: 12px; }
+
+header {
+  background-color: #06803c;
+  height: 54px;
+  border-bottom: 1px solid #d1e7db; }
+  header:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+header .wrapper .menu_btn,
+header .wrapper .logo {
+  cursor: pointer;
+  float: left;
+  margin-top: 12px; }
+
+header .wrapper .menu_btn {
+  width: 30px;
+  margin-right: 23px; }
+
+header .wrapper .logo {
+  width: 70px; }
+
+header .wrapper .menu_btn_right {
+  float: right;
+  border-left: 1px solid #57a97b;
+  padding-top: 12px;
+  height: 42px; }
+
+header .wrapper .btn_translate {
+  width: 46px; }
+  header .wrapper .btn_translate a {
+    display: block;
+    width: 70%;
+    padding-left: 12px; }
+
+header .wrapper .btn_map {
+  width: 56px; }
+  header .wrapper .btn_map a {
+    display: block;
+    width: 34%;
+    padding-left: 19px; }
+
+.menu {
+  display: none;
+  position: absolute;
+  width: 85%;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+  @media (max-width: 390px) {
+    .menu {
+      width: 90%; } }
+  .menu .close_btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #06803c;
+    font-size: 2em;
+    padding-left: 5px; }
+  .menu h1 {
+    margin: 0;
+    padding: 15px 0 16px;
+    text-align: center;
+    color: #06803c;
+    font-family: "MuseoSansBlack";
+    font-size: 1.65em; }
+    @media (max-width: 390px) {
+      .menu h1 {
+        font-size: 1.3em; } }
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.3em; }
+    @media (max-width: 390px) {
+      .menu ul {
+        font-size: 1em; } }
+  .menu .mnu_wrapper {
+    padding: 0 5%; }
+  .menu .mnu_phone {
+    text-align: center;
+    font-family: "MuseoSansBlack";
+    background-color: #c1dfce;
+    border-radius: 25px;
+    padding: 15px 0 8px;
+    margin: 0 10%;
+    font-size: 1.35em; }
+    .menu .mnu_phone img {
+      width: 28px;
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: 5px;
+      position: relative;
+      top: -3px; }
+      @media (max-width: 390px) {
+        .menu .mnu_phone img {
+          width: 22px; } }
+    @media (max-width: 390px) {
+      .menu .mnu_phone {
+        padding-top: 10px; } }
+    @media (max-width: 390px) {
+      .menu .mnu_phone {
+        font-size: 1.1em; } }
+  .menu .top_menu {
+    background-color: #fff; }
+    .menu .top_menu ul {
+      margin-top: 25px; }
+      .menu .top_menu ul a {
+        color: #06803c;
+        text-decoration: none; }
+      .menu .top_menu ul li {
+        padding: 15px 0;
+        border-top: 1px solid #06803c;
+        background-image: url(../img/arrows.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 15px; }
+  .menu .bottom_menu {
+    background-color: #06803c; }
+    .menu .bottom_menu ul {
+      padding-bottom: 30px; }
+      .menu .bottom_menu ul a {
+        color: #fff;
+        text-decoration: none; }
+      .menu .bottom_menu ul li {
+        display: block;
+        padding: 15px 0 15px 6px;
+        border-top: 1px solid #b4d9c4;
+        position: relative;
+        z-index: 2; }
+        .menu .bottom_menu ul li:nth-child(1) {
+          border-top: none;
+          z-index: 2; }
+          .menu .bottom_menu ul li:nth-child(1) img {
+            position: relative;
+            top: 5px;
+            z-index: 3; }
+            .menu .bottom_menu ul li:nth-child(1) img.orange {
+              position: absolute;
+              left: -5%;
+              top: 10px;
+              width: 65px; }
+              @media (max-width: 390px) {
+                .menu .bottom_menu ul li:nth-child(1) img.orange {
+                  width: 45px;
+                  top: 15px; } }
+        .menu .bottom_menu ul li img {
+          display: inline-block;
+          width: 22px;
+          padding-right: 20px; }
+          @media (max-width: 390px) {
+            .menu .bottom_menu ul li img {
+              width: 17px;
+              padding-right: 10px; } }
+
+.shadow {
+  display: none;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); }
